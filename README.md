@@ -20,3 +20,4 @@ Heat can flow between Objects in three main mechanisms:
 
 In a thermal system, these mechanisms often work together. For instance, in a home heating system, a radiator heats the air through conduction, and the warm air circulates via convection, while some heat is also radiated into the room.
 
+![1](Thermalheat.png)
