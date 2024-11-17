@@ -21,3 +21,31 @@ Heat can flow between Objects in three main mechanisms:
 In a thermal system, these mechanisms often work together. For instance, in a home heating system, a radiator heats the air through conduction, and the warm air circulates via convection, while some heat is also radiated into the room.
 
 ![1](Thermalheat.png)
+
+- A: Area of Surface
+- h: Thickness of the Wall
+- q: Heat Flow
+- delatT = T2 - T1 = Rtq where Rt is the Thermal Resistance
+- During heat transfer between materials: Each Material has a Thermal Capacitance where q = C dT/dt and C = mc where c is the specific heat.
+
+## Scenario of the Project
+We have a room of area 12m2 and the thickness of the walls is 0.2 m, with a mass of 60 kg. The thermal conductivity between the walls is 1.43 W/mk and the specific heat c = 1.005 J/kg.K.
+A heater is installed inside the room, and a temperature sensor measures both the internal and external temperatures. Heat transfer occurs from the outside to the inside, indicating that the external temperature influences the internal temperature of the room.
+ Our aim is to measure the difference between these temps and tune a PID controller in order to dynamically keep the room temperature as intended regardless of how the temperature outside is.
+
+### Block Diagram of the System:
+ ![Block Diagram](diagram.png)
+
+ - Input Signal / Reference: Is the desired room temperature
+ - Controller: PID
+ - Plant: Heater, room, walls
+ - Disturbance: The outside temperature
+ - Feedback Element: Temperature Sensor
+
+### Open Loop System:
+The below schematic shows the open loop configuration of the system without the controller using SIMULINK:
+
+![open](open.png)
+
+
+
