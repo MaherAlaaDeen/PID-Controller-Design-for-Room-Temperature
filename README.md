@@ -47,5 +47,13 @@ The below schematic shows the open loop configuration of the system without the 
 
 ![open](open.png)
 
+Assuming the Room temperature is T1 = 10 degC and the outsied temperature T2 = 5 degC and the heater is not working we can see the following:
+
+![openres](openresult.png)
+ We can see that a heat transfer occurs between the room and the outside via the walls, which causes the room temperature to decrease drastically from 10 to 5 degC in approximately 10 minutes.
+
+ 
+
+ 
 
 
