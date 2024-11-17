@@ -53,8 +53,48 @@ Assuming the Room temperature is T1 = 10 degC and the outsied temperature T2 = 5
 
 We can see that a heat transfer occurs between the room and the outside via the walls, which causes the room temperature to decrease drastically from 10 to 5 degC in approximately 10 minutes.
 
- 
+### Closed Loop System
+Adding The PID Controller and Closing the System:
 
+![Closed loop System](closed.png)
+
+After Tuning the Controller we got the following params:
+
+![parameters](params.png)
+
+An input Temperature of 30 degC is given to the system and we got the following result:
+
+![closed result](closedresult.png)
+
+The room temperature increased from 10 degC to the desired one at 30 degC in about 6 mins and then the controller kept the room temperature as intended.
+
+### Simulating under different circumstances:
+Toutside = -5 degC
+Troom = 5 degC
+
+#### Result
+
+![Result](result2.png)
+
+The controller was able to increase the Troom to the desired temperature regardless of the circumstances.
+
+## Conclusion
+The PID controller successfully regulated the system under varying initial conditions and external disturbances. It demonstrated effective temperature control, maintaining the desired room temperature (30°C) regardless of external conditions, such as an initial room temperature of 5°C and an outside temperature of -5°C. This showcases the robustness and reliability of the PID controller in dynamic and challenging environments.
+
+### Advantages of Using a PID Controller
+1. Systematic Advantages:
+- - Precision Control: The PID controller ensures accurate tracking of the desired temperature, minimizing overshoot and steady-state error.
+  - Robustness: The system adapts to environmental disturbances (e.g., changes in outside temperature) without requiring manual recalibration.
+  - Efficiency: Continuous adjustments reduce thermal lag and prevent excessive fluctuations, maintaining comfort.
+2. Financial Benefits:
+- - Energy Savings: Precise control prevents overuse of heating resources, reducing energy consumption and costs.
+  - Reduced Maintenance Costs: By ensuring smooth system operation, the PID controller minimizes wear on mechanical and electrical components, extending their lifespan.
+  - Cost-Effectiveness: The ability to adapt to various conditions eliminates the need for expensive auxiliary systems to compensate for external disturbances.
+
+This implementation demonstrates the PID controller's value as a cost-effective and systematic solution for achieving reliable and efficient temperature regulation in real-world applications.
+
+
+ 
  
 
 
